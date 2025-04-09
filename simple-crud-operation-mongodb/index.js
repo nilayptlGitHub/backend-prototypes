@@ -20,7 +20,7 @@ app.use("/api/products",productsRoute);
 
 mongoose
   .connect(
-    "mongodb+srv://<db_username>:<db_password>@mybackendcluster.ppxar2p.mongodb.net/Node-API?retryWrites=true&w=majority&appName=<cluster_name>"    //replace with your connection string
+    "<mongoDB_connection_URL>"    //replace with your connection string
   )
   .then(() => {
     console.log("Connected to MongoDB");
